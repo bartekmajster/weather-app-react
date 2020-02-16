@@ -59,7 +59,7 @@ class App extends Component {
 			return;
 		}
 		console.log(process.env);
-		const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.cityName}&units=metric&APPID=${API_KEY}`;
+		const API = `https://api.openweathermap.org/data/2.5/weather?q=${this.state.cityName}&units=metric&APPID=${API_KEY}`;
 		setTimeout(()=>this.handleDataFetch(API),1100);
 		this.setState(prevState => ({
 			logo: false,
